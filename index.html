@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Aerial by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -10,37 +10,477 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+	<body class="is-preload" id="body">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Khayle Torres</h1>
-						<p>Aspiring Software Engineer  &nbsp;&bull;&nbsp; 3rd Year EIE Student &nbsp;&bull;&nbsp; Imperial College London</p>
-						<nav>
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Khayle Torres</h1>
+							<p>Software Engineer / Student</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
 							<ul>
-								<li><a href="https://www.linkedin.com/in/khayle-torres-6951011bb" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="Khayle_Torres_Resume.pdf" class="icon solid fa-file-pdf"><span class="label">aa</span></a></li>
-								<li><a href="https://github.com/kt1719" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:torreskhayle@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#timeline" id="about-link"><span class="icon solid fa-user">Timeline</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
-					</header>
 
-				<!-- Footer -->
-					
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons wrapper ul">
+							<li class="icon instagram" onclick="location.href='mailto:torreskhayle@gmail.com';">
+								<span class="tooltip">Email</span>
+								<span><i class="far fa-envelope"></i></span>
+							</li>
+							<li class="icon cv" onclick="location.href='#';">
+								<span class="tooltip">CV</span>
+								<span><i class="far fa-file-pdf"></i></span>
+							</li>
+							<li class="icon facebook" onclick="location.href='https://www.linkedin.com/in/khayle-torres-6951011bb/';">
+								<span class="tooltip">LinkedIn</span>
+								<span><i class="fab fa-linkedin-in"></i></span>
+							</li>
+							<li class="icon github" onclick="location.href='https://github.com/kt1719?tab=repositories';">
+								<span class="tooltip">Github</span>
+								<span><i class="fab fa-github"></i></span>
+							</li>
+						</ul>
+
+				</div>
 
 			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Khayle Torres</strong><br />
+								<br>
+								<h4></h4>
+								<span id="desc"></span>
+								<span id="feature-text"></span>
+								<span id="cursor" class="input-cursor-no-movement"></span>
+							</header>
+							<footer></footer>
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two cover2">
+						<div class="container2">
+
+							<header>
+								<h2 class="hero glitch layers" data-text="Portfolio"><span>Portfolio</span></h2>
+							</header>
+
+							<p class="hero-p glow">As a Software Engineer I work on many different projects ranging in size and complexity allowing me to 
+								learn, adapt and thrive to challenge thrown at me and also work perfectly in a team environment.
+							</p>
+
+							<p class="hero-p glow">Just below are a couple of different projects I've done over the years.</p>
+
+							<div class="row">
+								<div class="col-4-2 col-10-mobile left">
+									<article class="item">
+										<a href="https://github.com/simon-staal/Debonair" class="image fit image-glow"><img src="images/Debonair.jpg" alt="" /></a>
+										<header>
+											<h3 class="glow">Debonair The Rover</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://github.com/kt1719/Pilot-Scheduling-REST-API" class="image fit image-glow"><img src="images/Pilot-Scheduling-REST-API.png" alt="" /></a>
+										<header>
+											<h3 class="glow">Pilot-Scheduling REST API</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-10-mobile center">
+									<article class="item">
+										<a href="https://github.com/xw2519/ISA-MIPS-coursework" class="image fit image-glow"><img src="images/mips-cpu.png" alt="" /></a>
+										<header>
+											<h3 class="glow">MIPS-CPU</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://github.com/kt1719/C-to-MIPS" class="image fit image-glow"><img src="images/C-to-MIPS.png" alt="" /></a>
+										<header>
+											<h3 class="glow">C-to-MIPS Compiler</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4-3 col-10-mobile right">
+									<article class="item">
+										<a href="https://github.com/simon-staal/World_of_DE10s" class="image fit image-glow"><img src="images/world-of-de10.png" alt="" /></a>
+										<header>
+											<h3 class="glow">World-Of-DE10</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://github.com/kt1719/Neural-Networks" class="image fit image-glow"><img src="images/neural-net-v2.jpg" alt="" /></a>
+										<header>
+											<h3 class="glow">Neural Networks</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-7 center col-10-mobile">
+									<article class="item">
+										<a href="https://kt1719.github.io/" class="image fit image-glow"><img src="images/website-portfolio.png" alt="" /></a>
+										<header>
+											<h3 class="glow">Website Portfolio</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Timeline Me -->
+					<section id="timeline" class="timeline color-1">
+						<div class="ag-timeline-block">
+							<div class="ag-timeline_title-box">
+								<div>
+									<p id="timeline_title" class="timeline_text hero">
+										<span class="timeline_text__first">
+											<span class="timeline_text__word">
+												Timeline
+											</span>
+											<span class="timeline_text__first_bg"></span>
+										</span>
+									</p>
+								</div>
+							</div>
+							<section class="ag-section" id="timeline_section">
+							<div class="ag-format-container">
+								<div class="js-timeline ag-timeline">
+								<div class="js-timeline_line ag-timeline_line">
+									<div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+								</div>
+								<div class="ag-timeline_list">
+
+									<div class="js-timeline_item ag-timeline_item">
+									<div class="ag-timeline-card_box">
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2016</div>
+										</div>
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">Barclays (Work Experience)</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/barclays.png" class="ag-timeline-card_img" width="640" height="300" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">Barclays (Work Experience)</div>
+											<div class="ag-timeline-card_desc">
+												At this point in time I was not quite sure what field to pursue so applied for a work experience for Barclays in Feltham.
+												During this time I assisted customers in their transactions and also customer support. I also shadowed the employees in order to gain
+												a better understanding of how the company infrastructure works.
+												<br><br>
+												Although I was not particularly keen into going into the Finance industry I was able to learn better communication and also being able
+												to interact and handling different customers which was very valuable experience.
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+									
+									<div class="js-timeline_item ag-timeline_item panel">
+									<div class="ag-timeline-card_box">
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">A-Levels (St Pauls Catholic College)</div>
+										</div>
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2017</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/a-level.png" class="ag-timeline-card_img" width="640" height="400" alt="" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">A-Levels (St Pauls Catholic College)</div>
+											<div class="ag-timeline-card_desc">
+												At Secondary School I attended St Pauls Catholic College (Sunbury) in which I was able to achieve the third highest overall grades
+												in. I picked Maths, Further Maths and Physics as I always loved scientific/STEM related subjects and knew I wanted to go the scientific route.
+												<br><br>
+												During my time at St Pauls I was also a mentor for the years below giving tips on revision, handling exam stress and preparing for University applications.
+												I was also able to achieve the Edexcel Level 3 Algebra Award with a mark of 87/90.
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+
+									<div class="js-timeline_item ag-timeline_item panel">
+									<div class="ag-timeline-card_box">
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2018</div>
+										</div>
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">OTM Servo (Work Experience)</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/otm.png" class="ag-timeline-card_img" width="640" height="260" alt="" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">OTM Servo (Work Experience)</div>
+											<div class="ag-timeline-card_desc">
+												At this point I was not quite sure as to what Engineering field I wanted to get into however I
+												did know that I wanted to be an Engineer. I tried to join the Mechanical Engineering company OTM Servo which 
+												allowed me to work on numerous different areas on the development lifecycle of a product.
+												<br><br>
+												Throughout this period I was exposed to what it was like to work in a fast paced team environment and was hooked instantly.
+												I immediately realised that out of all the different areas I worked on at the time, I was always found Software fields being
+												the most exciting which I took note of.
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+
+									<div class="js-timeline_item ag-timeline_item panel">
+									<div class="ag-timeline-card_box">
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">Imperial College London</div>
+										</div>
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2019</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/imp1.png" class="ag-timeline-card_img" width="640" height="470" alt="" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">Imperial College London</div>
+											<div class="ag-timeline-card_desc">
+											Although I did not pick Computer Science as one of my A-level subjects I decided not to give up on it. I've used Computers ever
+											since I was 5 years old and knew that I've always had an interest into anything related to tech. Because of this, I ended up picking
+											Electronic and Information Engineering as I thought it was an amazing middle ground for both Hardware and Software.
+											<br><br>
+											This was an amazing choice as I would share my modules with both Computer Science students and also Electrical Engineering students.
+											Because of this, I have been to take in the best of both courses and also have a deeper and better understanding of Software at a fundemental level.
+											Imperial also allowed me to be certain for my passion for Software and Programming and solidify my career path.
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+									
+									<div class="js-timeline_item ag-timeline_item panel">
+									<div class="ag-timeline-card_box">
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2020</div>
+										</div>
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">Game Development</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/gamedev.png" class="ag-timeline-card_img" width="640" height="300" alt="" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">Game Development</div>
+											<div class="ag-timeline-card_desc">
+											I've decided to learn Game Development in my spare time at Imperial as a hobby. I took up a couple of Youtube and Udemy courses
+											including 2D and 3D Game Development in Unity and a little bit of unreal Engine. This allowed me to sharpen both my C++ and C# skills
+											and also adapt a different way of thinking for fields I'm not familiar with (e.g., 3D modelling, music, UI/UX, design, etc..).
+											<br><br>
+											I also reguarly team up with other Game Developers, Pixel Artists and Music Composers from time to time
+											to try to create games for fun GameJam competitions.
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+
+									<div class="js-timeline_item ag-timeline_item panel">
+									<div class="ag-timeline-card_box">
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">Remote Academic Tutor</div>
+										</div>
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2021</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/mytutor.png" class="ag-timeline-card_img" width="640" height="400" alt="" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">Remote Academic Tutor</div>
+											<div class="ag-timeline-card_desc">
+											During my time at Imperial I decided to take up a Remote Academic Tutoring job. As I knew the stress and
+											struggles of going through the exam period of A-Levels I wanted to help guide some of the younger students through their A-Levels 
+											similar to how I've done when mentoring in Secondary School. 
+											<br><br>
+											I took up a job as a Remote Academic Tutor at MyTutor.co.uk which I was then able to help tutor and mentor multiple students in both A-Levels
+											and GCSEs. 
+											<br><br>
+											My tutoring primarily consisted of scientific subjects as it is my most proficient fields however I was also open to tutoriing other 
+											non-scientific subjects. I enjoyed seeing the improvements of all my students and the gradual increase in effort and interest each of them
+											would bring to my lessons as time went on. 
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+
+									<div class="js-timeline_item ag-timeline_item panel">
+									<div class="ag-timeline-card_box">
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+										<div class="ag-timeline-card_point">2022</div>
+										</div>
+										<div class="ag-timeline-card_meta-box">
+										<div class="ag-timeline-card_meta">Software Engineering (Industrial Placement)</div>
+										</div>
+									</div>
+									<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+										<div class="ag-timeline-card_img-box">
+											<img src="images/THG-Logo.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+										</div>
+										<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">Software Engineering (Industrial Placement)</div>
+											<div class="ag-timeline-card_desc">
+											During my applications for a 6 month industrial placement I applied to a company called THG which is a British e-commerce retailer
+											company  
+											</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+									</div>
+									</div>
+
+									<div class="js-timeline_item ag-timeline_item panel">
+										<div class="ag-timeline-card_box">
+										<div class="ag-timeline-card_meta-box">
+											<div class="ag-timeline-card_meta">Masters in Electronic and Information Engineering</div>
+										</div>
+										<div class="js-timeline-card_point-box ag-timeline-card_point-box">
+											<div class="ag-timeline-card_point">2023</div>
+										</div>
+										</div>
+										<div class="ag-timeline-card_item">
+										<div class="ag-timeline-card_inner">
+											<div class="ag-timeline-card_img-box">
+											<img src="images/graduate.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+											</div>
+											<div class="ag-timeline-card_info">
+											<div class="ag-timeline-card_title">Masters in Electronic and Information Engineering</div>
+											<div class="ag-timeline-card_desc">
+												To be continued...
+											</div>
+											</div>
+										</div>
+										<div class="ag-timeline-card_arrow"></div>
+										</div>
+									</div>
+
+								</div>
+								</div>
+							</div>
+							</section>
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>I'm Khayle</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+		
+			<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Khayle's Portfolio</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/autotyper.js"></script>
+			<script src="assets/js/timeline.js"></script>
+			<script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+			<script src="assets/js/timeline_title.js"></script>
+			<script src="assets/js/timeline_background.js"></script>
 	</body>
 </html>
