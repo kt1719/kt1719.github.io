@@ -2352,16 +2352,13 @@ input, select, textarea {
 				padding-bottom: 2em;
 			}
 
-			#main > section.three {
+			.back-ground-1 {
 				background-color: #a85f42fb;
 				background-image: url("../../images/mountains-1412683.png");
 				background-repeat: no-repeat;
   				background-attachment: fixed;
-				padding-top: 5%;
 				width: 100%;
 				height: 100%;
-				
-				padding-bottom: 5%;
 			}
 
 			#main > section.four {
@@ -2435,6 +2432,8 @@ input, select, textarea {
 				-webkit-transform: translateX(375px);
 				-ms-transform: translateX(375px);
 				transform: translateX(375px);
+				background-repeat: no-repeat;
+  				background-attachment: fixed;
 			}
 			
 			body.header-visible #headerToggle {
@@ -3218,6 +3217,8 @@ input, select, textarea {
   body {
 	color: #ccc;
 	background: #111;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
   }
   
   h1,
@@ -4124,6 +4125,15 @@ input, select, textarea {
 	color: #FFF;
   }
 
+  .about-me-desc {
+	line-height: 1.45;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(5, 5, 5);
+	padding-top: 5%;
+  }
+
   .ag-timeline-card_desc2 {
 	line-height: 1.45;
 	text-align: left;
@@ -4289,7 +4299,6 @@ input, select, textarea {
   .color-1 { 
 	content: "";
 	background-color: #d37f6152;
-	background-image: url("../../images/mountains-1412683.png");
 	box-shadow: inset 0 0 0 2000px #ffffff00;
 	transition: opacity 1s ease;
   }
@@ -4297,21 +4306,18 @@ input, select, textarea {
   .color-4 {
 	content: "";
 	background-color: #1a152e52;
-	background-image: url("../../images/mountains-1412683.png");
 	box-shadow: inset 0 0 0 2000px #1a152e9f;
 	transition: opacity 1s ease;
   }
   .color-3 {
 	content: "";
 	background-color: #4ba1a652;
-	background-image: url("../../images/mountains-1412683.png");
 	box-shadow: inset 0 0 0 2000px #4ba1a65d;
 	transition: opacity 1s ease;
   }
   .color-2 {
 	content: "";
 	background-color: #d37f6152;
-	background-image: url("../../images/mountains-1412683.png");
 	box-shadow: inset 0 0 0 2000px #d37f6152;
 	transition: opacity 1s ease;
   }
@@ -4348,6 +4354,10 @@ input, select, textarea {
 	border-radius: 25px;
 	background: #757575b9;
 	margin-bottom: 10%;
+	height: 100%;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .skills .skill {

@@ -64,7 +64,6 @@
           if (agTop + agPosY - $(window).scrollTop() < (agPosY + .5 * agOuterHeight)) {
             if($(this).hasClass('js-ag-active') == false) {
               index++
-              console.log("index up to " + index)
               if (index % 3 == 0) 
               {
                 section.classList.remove(colors[prev_index/3])
