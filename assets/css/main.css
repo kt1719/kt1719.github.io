@@ -553,6 +553,10 @@ input, select, textarea {
 			padding-left: 0px;
 			padding-right: 0px;
 			}
+		
+		.about-me-change {
+			width: 65%;
+		}
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -1286,6 +1290,14 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 40px;
 						}
+
+		}
+
+		@media screen and (max-width: 1620px) {
+
+			.about-me-change {
+				width: 100%;
+			}
 
 		}
 
@@ -4225,6 +4237,15 @@ input, select, textarea {
 	  height: auto;
 	  width: auto;
 	}
+
+	.about-me-desc {
+		line-height: 1.45;
+		text-align: left;
+		font-size: 15px;
+		font-weight: bold;
+		color: rgb(5, 5, 5);
+		padding-top: 5%;
+	  }
   }
   
   @media only screen and (max-width: 639px) {
@@ -4249,6 +4270,14 @@ input, select, textarea {
 	  width: 750px;
 	}
   
+	.about-me-desc {
+		line-height: 1.45;
+		text-align: left;
+		font-size: 15px;
+		font-weight: bold;
+		color: rgb(5, 5, 5);
+		padding-top: 5%;
+	  }
   }
   
   @media (min-width: 980px) and (max-width: 1161px) {
@@ -4353,8 +4382,8 @@ input, select, textarea {
 .grey-background {
 	border-radius: 25px;
 	background: #757575b9;
-	margin-bottom: 10%;
-	height: 100%;
+	padding-bottom: 5%;
+	height: auto;
 	width: 100%;
 	padding-left: 10%;
 	padding-right: 10%;
