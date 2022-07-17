@@ -12,12 +12,3 @@ function activateTimelineTitle () {
       .to(firstBg, 0.2, {scaleX:0})
       .to(secBg, 0.2, {scaleX:0});
 }
-
-var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true) {
-        activateTimelineTitle()
-        observer.disconnect()
-    }
-}, { threshold: [1.0] });
-
-observer.observe(document.getElementById("timeline_title"));
